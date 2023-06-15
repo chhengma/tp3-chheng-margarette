@@ -3,16 +3,130 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Ma première page web</title>
+	<title>Burger Shop</title>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css" />
 </head> 
 
 <body>
-	<!-- Élément <div> qui sert à center le contenu dans la page (container) -->
-	<div class="container">
-		<!-- Vous devez ajouter vos balises sous ce commentaire -->
-	</div>
+	<header>
+		<div class="container flex-cotes">
+			<h1><img src="img/logo.png" alt="logo burger shop" href="index.html"></h1>
+			<nav>
+				<ul>
+					<li><a class="active" href="">Menu</a></li>
+					<li><a href="">Réservation</a></li>
+					<li><a href="">Restaurant</a></li>
+					<li><a href="">Ma commande</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Nos burgers</h2>
+			<div class="flex-colonnes">
+				<div class="carte">
+					<img src="img/menu/commodo.png" alt="commodo">
+					<h3>Le Commodo</h3>
+					<h4>9,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/lorem.png" alt="lorem">
+					<h3>Le Lorem</h3>
+					<h4>12,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/dolar-met.png" alt="dolar-met">
+					<h3>Le Dolar Met</h3>
+					<h4>8,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/fugiat.png" alt="fugiat">
+					<h3>Le Fugiat</h3>
+					<h4>11,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/laboris.png" alt="laboris">
+					<h3>Le Laboris</h3>
+					<h4>12,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/cubidatat.png" alt="cubidatat">
+					<h3>Le Cubidatat</h3>
+					<h4>14,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<h2>Nos beignes</h2>
+			<div class="flex-colonnes">
+				<div class="carte">
+					<img src="img/menu/etiam.png" alt="etiam">
+					<h3>Le Etiam</h3>
+					<h4>3,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/malesuada.png" alt="malesuada">
+					<h3>Le Malesuada</h3>
+					<h4>2,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/vestibulum.png" alt="vestibulum">
+					<h3>Le Vestibulum</h3>
+					<h4>1,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="carte">
+					<img src="img/menu/maximus.png" alt="maximus">
+					<h3>Le Maximus</h3>
+					<h4>2,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</section>
+		<section class="tshirt-burgershop">
+			<div class="container">
+				<div class="flex-colonnes-tshirt">
+					<div class="col-demi">
+						<h5>Le T-shirt burger shop</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias porro? Commodi omnis ratione, perferendis dicta aliquid nulla velit voluptas, tempora harum doloremque consequatur? Perferendis odio dolore itaque harum distinctio!	
+						</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</div>
+					<div class="col-demi">
+						<img src="img/t-shirt.png" alt="T-shirt Burger Shop">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="contact">
+			<div class="container">
+				<ul class="flex-cotes">
+					<li>Burger Shop : 3175 Boul. Laviolette, Trois-Rivières, Qc</li>
+					<li><a href="tel:4185551234" class="btn-contact">418-555-1234</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="container">
+				<ul class="flex-cotes">
+					<li>Site intégré par Margarette Chheng</li>
+					<li>Dans le cadre du cours Techniques d'intégration des interfaces Web-Cégep de Trois-Rivières</li>
+				</ul>
+			</div>
+		</div>
+	  </footer>
 </body>
 
 </html>
