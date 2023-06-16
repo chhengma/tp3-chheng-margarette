@@ -89,6 +89,13 @@ h5{
 	margin-bottom: 0;
 }
 
+h6{
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
 p{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
@@ -121,7 +128,7 @@ p{
 	align-content: center;
 }
 
-.flex-colonnes-tshirt{
+.flex-colonnes-space{
     display: flex;
     flex-wrap: wrap;
 	justify-content: space-between;
@@ -143,6 +150,7 @@ p{
 .tshirt-burgershop{
 	background-color: #aacd35;
 	margin-top: 50px;
+	height: 425px;
 }
 
 .tshirt-burgershop img{
@@ -197,9 +205,77 @@ p{
 	text-decoration: none;
 }
 
+.btn-commandez{
+	display: inline-block;
+	color: #FFF;
+	background-color: #2e302f;
+	padding: 10px 20px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
 /* ------ Table ------ */
 
+
 /* ------ Formulaire ------ */
+
+legend{
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: 600;
+	margin: 10px 0px 10px 0px;
+}
+
+fieldset{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+	margin:10px 0px 20px 0px;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+	margin-bottom: 20px;
+}
+
+input[type="text"]{
+	width: 75%;
+}
+
+input[type="email"]{
+	width: 75%;
+}
+
+label{
+    display: block;
+}
+
+.radio-group{
+	display: flex;
+}
+
+.radio-group input[type="radio"]{
+	margin-right: 10px;
+}
+
+.infolettre{
+	display: flex;
+}
+
+.infolettre input[type="checkbox"]{
+	margin-right: 10px;
+}
+
+textarea{
+	width: 75%;
+	height: 100px;
+}
+
+.container-commandez{
+	text-align: center;
+}
 
 /* ------ Footer ------ */
 
