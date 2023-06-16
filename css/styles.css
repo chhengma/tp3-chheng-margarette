@@ -216,7 +216,77 @@ p{
 	text-decoration: none;
 }
 
-/* ------ Table ------ */
+/* ------ Positionnement avec grid ------ */
+
+.list-img li{
+	border: 1px solid rgb(255, 255, 255);
+	padding: 0px;
+}
+  
+.list-img{
+	padding: 0;
+	list-style-type: none;
+}
+
+img{
+	width: 100%;
+}
+
+.grid-mosaique{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  }
+
+.grid-mosaique li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#mosaique-1{
+	grid-column: 1/span 2;
+	grid-row: 1/span 2;
+}
+
+#mosaique-2{
+	grid-column: 3;
+	grid-row: 1;
+}
+
+#mosaique-3{
+	grid-column: 3;
+	grid-row: 2;
+}
+
+#mosaique-4{
+	grid-column: 1;
+	grid-row: 3;
+}
+
+#mosaique-5{
+	grid-column: 1;
+	grid-row: 4;
+}
+
+#mosaique-6{
+	grid-column: 2/span 2;
+	grid-row: 3/span 2;
+}
+
+#mosaique-4{
+	grid-row: ;
+	grid-column: ;
+}
+
+#mosaique-5{
+	grid-row: ;
+	grid-column: ;
+}
+
+#mosaique-6{
+	grid-row: ;
+	grid-column: ;
+}
 
 
 /* ------ Formulaire ------ */
