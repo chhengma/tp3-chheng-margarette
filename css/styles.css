@@ -288,7 +288,6 @@ aside ul{
 /* ------ Positionnement avec grid ------ */
 
 .list-img li{
-	border: 1px solid rgb(255, 255, 255);
 	padding: 0px;
 }
   
@@ -455,4 +454,83 @@ footer ul{
 
 .bottom{
 	background-color: #EEEEEE;
+}
+
+/* ------ Media Queries ------ */
+
+@media screen and (max-width: 1200px)
+{
+	.grid-colonnes{
+		display: grid;
+		grid-template-columns: 1fr 1fr;		
+		gap: 30px;
+
+	}
+
+	#cubidatat,
+	#laboris{
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.grid-mosaique{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#mosaique-1,
+	#mosaique-2,
+	#mosaique-3,
+	#mosaique-4,
+	#mosaique-5,
+	#mosaique-6{
+		grid-column: auto;
+		grid-row: auto;
+	}
+	
+	.flex-colonnes-space{
+		flex-direction: column;
+	}
+
+	.col-demi{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 960px)
+{
+	.grid-colonnes{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	#cubidatat,
+	#laboris{
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.grid-mosaique{
+		grid-template-columns: 1fr;
+	}
+
+	#mosaique-1,
+	#mosaique-2,
+	#mosaique-3,
+	#mosaique-4,
+	#mosaique-5,
+	#mosaique-6{
+		grid-column: auto;
+		grid-row: auto;
+	}
+	
+	.flex-colonnes-space{
+		flex-direction: column;
+	}
+
+	.col-demi{
+		width: 100%;
+	}
+
 }
