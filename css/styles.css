@@ -134,7 +134,10 @@ p{
 }
 
 .show-on-mobile{
-	display: none !important;
+	width: 50px;
+	height: 50px;
+	margin-top: 20px;
+	display: none;
 }
 
 /* ------ Positionnement ------ */
@@ -311,7 +314,7 @@ aside ul{
 	list-style-type: none;
 }
 
-img{
+.grid-mosaique img{
 	width: 100%;
 }
 
@@ -436,6 +439,7 @@ textarea{
 	text-align: center;
 }
 
+
 /* ------ Footer ------ */
 
 footer li{
@@ -477,8 +481,8 @@ footer ul{
 {
 	.grid-colonnes{
 		display: grid;
-		grid-template-columns: 1fr 1fr;		gap: 30px;
-
+		grid-template-columns: 1fr 1fr;		
+		gap: 30px;
 	}
 
 	#cubidatat,
@@ -545,6 +549,57 @@ footer ul{
 
 	.col-demi{
 		width: 100%;
+	}
+
+	.hide-on-mobile{
+		display: none !important;
+	}
+
+	.show-on-mobile{
+		display: block !important;
+	}
+
+	.btn{
+		display: inline-block;
+		color: #FFF;
+		background-color: #2e302f;
+		padding: 20px 20px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+
+	.btn:hover{
+		display: inline-block;
+		color: #FFF;
+		background-color: #E27B34;
+		padding: 20px 20px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+
+}
+
+@media screen and (max-width: 570px)
+{
+	.flex-cotes{
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		text-align: center;
+	}
+
+	.contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #E27B34;
+		height: 150px;
 	}
 
 }
