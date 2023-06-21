@@ -105,8 +105,6 @@ p{
 .carte{
 	text-align: center;
 	border: 1px solid black;
-	width: 25%;
-	height: auto;
 }
 
 .carte img{
@@ -133,6 +131,10 @@ p{
 	background-position: center;
 	width: 100%;
 	height: 100%;
+}
+
+.show-on-mobile{
+	display: none !important;
 }
 
 /* ------ Positionnement ------ */
@@ -287,8 +289,21 @@ aside ul{
 
 /* ------ Positionnement avec grid ------ */
 
-.list-img li{
-	padding: 0px;
+.grid-colonnes{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-content: center;
+	gap: 0px;
+}
+
+#laboris{
+	grid-column: 2;
+	grid-row: 2;
+}
+
+#cubidatat{
+	grid-column: 3;
+	grid-row: 2;
 }
   
 .list-img{
@@ -303,7 +318,7 @@ img{
 .grid-mosaique{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-  }
+}
 
 .grid-mosaique li{
 	display: flex;
@@ -462,8 +477,7 @@ footer ul{
 {
 	.grid-colonnes{
 		display: grid;
-		grid-template-columns: 1fr 1fr;		
-		gap: 30px;
+		grid-template-columns: 1fr 1fr;		gap: 30px;
 
 	}
 
